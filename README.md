@@ -14,7 +14,8 @@
 
 ## 🌐 访问
 
-👉 https://frostfallx.github.io/frostfallx_website/
+👉 https://frostfallx.guaitech.org/ （主域名）  
+👉 https://frostfallx.github.io/frostfallx_website/ （镜像）
 
 ## 📦 本地开发
 
