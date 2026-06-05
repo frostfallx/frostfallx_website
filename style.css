@@ -69,70 +69,20 @@ body {
     position: relative;
 }
 
-.fox-ear {
-    position: absolute;
-    width: 36px;
-    height: 40px;
-    background: linear-gradient(135deg, #ff8c42, #ff6b35);
-    border-radius: 50% 50% 0 0;
-    top: -12px;
-    z-index: 1;
-}
-
-.fox-ear.left { left: 12px; transform: rotate(-15deg); }
-.fox-ear.right { right: 12px; transform: rotate(15deg); }
-
-.fox-face {
-    position: absolute;
-    width: 90px;
-    height: 80px;
-    background: linear-gradient(135deg, #ff8c42, #e86a2a);
-    border-radius: 50% 50% 45% 45%;
-    bottom: 0;
-    left: 15px;
-}
-
-.fox-eye {
-    position: absolute;
-    width: 12px;
-    height: 14px;
-    background: #1a1a2e;
+.fox-img {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    top: 28px;
+    object-fit: cover;
+    border: 3px solid rgba(255,140,66,0.4);
+    box-shadow: 0 0 20px rgba(255,140,66,0.2);
+    transition: all 0.3s ease;
 }
 
-.fox-eye.left { left: 20px; }
-.fox-eye.right { right: 20px; }
-
-.fox-eye::after {
-    content: '';
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: #fff;
-    border-radius: 50%;
-    top: 2px;
-    left: 2px;
-}
-
-.fox-nose {
-    position: absolute;
-    width: 10px;
-    height: 8px;
-    background: #1a1a2e;
-    border-radius: 50%;
-    bottom: 22px;
-    left: 40px;
-}
-
-.fox-mouth {
-    position: absolute;
-    width: 16px;
-    height: 8px;
-    border-bottom: 2px solid #1a1a2e;
-    border-radius: 0 0 50% 50%;
-    bottom: 14px;
-    left: 37px;
+.fox-img:hover {
+    transform: scale(1.05);
+    border-color: #ff8c42;
+    box-shadow: 0 0 30px rgba(255,140,66,0.4);
 }
 
 h1 {
@@ -319,13 +269,5 @@ h1 {
     .profile-card { padding: 32px 20px; }
     .skill-grid { grid-template-columns: 1fr 1fr; }
     .avatar { width: 100px; height: 100px; }
-    .fox-face { width: 75px; height: 66px; left: 12px; }
-    .fox-ear { width: 30px; height: 33px; }
-    .fox-ear.left { left: 8px; }
-    .fox-ear.right { right: 8px; }
-    .fox-eye { width: 10px; height: 12px; top: 22px; }
-    .fox-eye.left { left: 16px; }
-    .fox-eye.right { right: 16px; }
-    .fox-nose { left: 32px; bottom: 18px; }
-    .fox-mouth { left: 30px; bottom: 10px; }
+    .fox-img { width: 100px; height: 100px; }
 }
